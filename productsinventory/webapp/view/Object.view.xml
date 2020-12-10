@@ -92,7 +92,7 @@
                                     path: 'Discount',
                                     formatter: '.formatter.percent'
                                     }" unit="%"></ObjectNumber>
-                                <Link text="View shipment details"></Link>
+                                <Link text="View Shipment Details"></Link>
                             </cells>
                         </ColumnListItem>
                     </items>

@@ -55,7 +55,6 @@
 						</SearchField>
 					</OverflowToolbar>
 				</headerToolbar>
-
                 <columns>
                     <Column id="nameColumn">
                         <Text text="{i18n>tableNameColumnTitle}" id="nameColumnTitle"/>

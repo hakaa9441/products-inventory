@@ -96,6 +96,7 @@ sap.ui.define([
                 parameters: {
                     expand: "Supplier, Order_Details/Order"
                 },
+                
 				events: {
 					change: this._onBindingChange.bind(this),
 					dataRequested: function () {

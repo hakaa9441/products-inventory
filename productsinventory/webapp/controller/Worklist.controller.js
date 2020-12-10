@@ -142,7 +142,8 @@ sap.ui.define([
             }
         },
         
-		/**
+
+        /**
 		 * Event handler for refresh event. Keeps filter, sort
 		 * and group settings and refreshes the list binding.
 		 * @public

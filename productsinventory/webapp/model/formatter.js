@@ -16,6 +16,7 @@ sap.ui.define([], function () {
 			return parseFloat(sValue).toFixed(2);
          },
 
+         
          percent : function (sValue) {
              return sValue*100;
          }
