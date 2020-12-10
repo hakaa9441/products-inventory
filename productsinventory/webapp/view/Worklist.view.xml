@@ -56,14 +56,20 @@
 					</OverflowToolbar>
 				</headerToolbar>
 
-				<columns>
-					<Column id="nameColumn">
-						<Text text="{i18n>tableNameColumnTitle}" id="nameColumnTitle"/>
-					</Column>
-					<Column id="unitNumberColumn" hAlign="End">
-						<Text text="{i18n>tableUnitNumberColumnTitle}" id="unitNumberColumnTitle"/>
-					</Column>
-				</columns>
+                <columns>
+                    <Column id="nameColumn">
+                        <Text text="{i18n>tableNameColumnTitle}" id="nameColumnTitle"/>
+                    </Column>
+                    <Column id="unitNumberColumn">
+                        <Text text="{i18n>tableUnitNumberColumnTitle}" id="unitNumberColumnTitle"/>
+                    </Column>
+                    <Column>
+                        <Text text="{i18n>worklistTableUnitsOrderedColumnTitle}"/>
+                    </Column>
+                    <Column>
+                        <Text text="{i18n>worklistTableUnitsInStockColumnTitle}"/>
+                    </Column>
+                </columns>
 
 				<items>
 					<ColumnListItem
@@ -78,6 +84,8 @@
 									formatter: '.formatter.numberUnit'
 								}"
 								unit="{QuantityPerUnit}"/>
+                            <ObjectNumber number="{path: 'UnitsOnOrder', formatter: 'formatter.numberUnit'}" unit="PC"></ObjectNumber>
+                            <ObjectNumber number="{path: 'UnitsInStock', formatter: 'formatter.numberUnit'}" unit="PC"></ObjectNumber>
 						</cells>
 					</ColumnListItem>
 				</items>
